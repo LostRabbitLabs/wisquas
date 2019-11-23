@@ -1,7 +1,7 @@
 # wisquas
-WisQuas (Reveal)
+WisQuas (Reveal) - version: 0.1a
 
-=============================================
+=============================================================================
 
 Inspiration...
 http://wiki.ultimacodex.com/wiki/Reveal
@@ -28,3 +28,6 @@ wisquas-ip:
 
 ./wisquas-ip-v01a.py -2 "https://1.2.3.4/directory/moreurl" // Use 'Mobile Browser' profile
 
+-----
+
+WGET MIRROR OPTION...
