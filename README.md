@@ -31,3 +31,6 @@ wisquas-ip:
 -----
 
 WGET MIRROR OPTION...
+Uncomment the code and let it rip!
+
+...more to come...
