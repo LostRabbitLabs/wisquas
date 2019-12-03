@@ -497,6 +497,6 @@ except:
     pass
 '''
 
-print (Fore.GREEN + Style.BRIGHT + "\n=====================  WisQuas (v0.5) Complete!  =====================\n\n")
+print (Fore.GREEN + Style.BRIGHT + "\n====================  WisQuas (v0.5) Complete!  =====================\n\n")
 
 sys.exit()
