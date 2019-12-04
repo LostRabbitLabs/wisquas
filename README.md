@@ -13,15 +13,19 @@ http://wiki.ultimacodex.com/wiki/Reveal
 Usage... Provide desired profile (desktop or mobile) along with URL and you are good to go.
 
 // Show Help
+
 ./wisquas.py -h // HELP!!
 
 // Use 'Desktop Browser' profile
+
 ./wisquas.py -1 "https://www.domain.com/directory/moreurl/"
 
 // Use 'Mobile Browser' profile
+
 ./wisquas.py -2 "https://www.domain.com/directory/moreurl/"
 
 // Use 'Custom Host Header' for requests
+
 BONUS: ./wisquas.py -1 "https://www.domain.com/directory/moreurl/" custom_host_header_value
 
 ---
