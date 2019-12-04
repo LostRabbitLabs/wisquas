@@ -26,9 +26,11 @@ Usage... Provide desired profile (desktop or mobile) along with URL and you are 
 
 // Use 'Custom Host Header' for requests
 
+-=-=-=-=-=-
+BONUS:
 
-
-BONUS: ./wisquas.py -1 "https://www.domain.com/directory/moreurl/" custom_host_header_value
+./wisquas.py -1 "https://www.domain.com/directory/moreurl/" custom_host_header_value
+-=-=-=-=-=-
 
 ---
 
