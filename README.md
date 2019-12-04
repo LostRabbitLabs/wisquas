@@ -11,15 +11,18 @@ http://wiki.ultimacodex.com/wiki/Reveal
 ---
 
 Usage...
+
 Provide desired browsing profile (desktop or mobile) along with URL (with trailing backslash as needed!).
 
 // Show Help
 
 ./wisquas.py -h
 
+
 // Use 'Desktop Browser' profile
 
 ./wisquas.py -1 "https://www.domain.com/directory/moreurl/"
+
 
 // Use 'Mobile Browser' profile
 
@@ -30,6 +33,7 @@ Provide desired browsing profile (desktop or mobile) along with URL (with traili
 -=-=-=-=-=-
 
 BONUS:
+
 // Use 'Custom Host Header' for requests
 
 ./wisquas.py -1 "https://www.domain.com/directory/moreurl/" custom_host_header_value
