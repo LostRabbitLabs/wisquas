@@ -39,7 +39,7 @@ def isEncoded(k):
         final_strings = []
         k0 = k
         #all_strings.append(k0)
-        strings = ['|','_',':',';',"';",'**',"'",'--','-','&','%3D',' ','~','/','$','+','=','==',',','.',"**","*",'-']
+        strings = ['?','|','_',':',';',"';",'**',"'",'--','-','&','%3D',' ','~','\\','/','//','$','+','=','==',',','.',"**","*",'-']
         for p in strings:
             k1 = k.split(p)
             for all in k1:
@@ -57,6 +57,7 @@ def isEncoded(k):
                             z = z + 1
         all_strings2 = set(all_strings)
         for asdf in all_strings2:
+            asdf = asdf.strip('"')
             try:
                 decode_val3= codecs.decode(asdf, "hex")
                 if asdf != "":
@@ -66,7 +67,11 @@ def isEncoded(k):
             except:
                 pass
             try:
-                decode_val4 = base64.b64decode(asdf).decode("utf-8").rstrip('\n')
+                try:
+                    decode_val4 = base64.b64decode(asdf).decode("utf-8").rstrip('\n')
+                except:
+                    asdf = asdf + "=="
+                    decode_val4 = base64.b64decode(asdf).decode("utf-8").rstrip('\n')
                 if asdf != "":
                     print Fore.GREEN + Style.DIM + "\nOriginal B64 string: " + asdf + Style.RESET_ALL
                     print Fore.GREEN + Style.BRIGHT + "Decoded B64 string: " + decode_val4 + Style.RESET_ALL
@@ -159,7 +164,7 @@ except:
 
 print (Fore.GREEN + Style.BRIGHT + "\n")
 print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
-print("-   Wis Quas (v0.5) - Level 6 - REVEAL  -")
+print("-   Wis Quas (v0.6) - Level 6 - REVEAL  -")
 print("-    http://github.com/LostRabbitLabs   -")
 print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n")
 
@@ -497,6 +502,7 @@ except:
     pass
 '''
 
-print (Fore.GREEN + Style.BRIGHT + "\n====================  WisQuas (v0.5) Complete!  =====================\n\n")
+print (Fore.GREEN + Style.BRIGHT + "\n====================  WisQuas (v0.6) Complete!  =====================\n\n")
 
 sys.exit()
+
