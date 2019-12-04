@@ -25,11 +25,12 @@ Provide desired browsing profile (desktop or mobile) along with URL (with traili
 
 ./wisquas.py -2 "https://www.domain.com/directory/moreurl/"
 
-// Use 'Custom Host Header' for requests
+
 
 -=-=-=-=-=-
 
 BONUS:
+// Use 'Custom Host Header' for requests
 
 ./wisquas.py -1 "https://www.domain.com/directory/moreurl/" custom_host_header_value
 
