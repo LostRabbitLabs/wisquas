@@ -11,7 +11,7 @@ http://wiki.ultimacodex.com/wiki/Reveal
 ---
 
 Usage...
-Provide desired browsing profile (desktop or mobile) along with URL (and optional custom host header as needed).
+Provide desired browsing profile (desktop or mobile) along with URL (with trailing backslash as needed!).
 
 // Show Help
 
