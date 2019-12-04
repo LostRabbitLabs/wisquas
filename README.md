@@ -10,11 +10,12 @@ http://wiki.ultimacodex.com/wiki/Reveal
 
 ---
 
-Usage... Provide desired profile (desktop or mobile) along with URL and you are good to go.
+Usage...
+Provide desired browsing profile (desktop or mobile) along with URL (and optional custom host header as needed).
 
 // Show Help
 
-./wisquas.py -h // HELP!!
+./wisquas.py -h
 
 // Use 'Desktop Browser' profile
 
