@@ -1,5 +1,5 @@
 # wisquas
-WisQuas (Reveal) - version: 0.6
+WisQuas (Reveal) - version: 0.7
 
 =============================================================================
 
@@ -38,6 +38,13 @@ BONUS:
 
 ./wisquas.py -1 "https://www.domain.com/directory/moreurl/" custom_host_header_value
 
+
+
+// Use WGET to mirror site and create file of all discovered URLS
+
+---uncomment the code within
+
+
 -=-=-=-=-=-
 
 ---
@@ -47,6 +54,7 @@ COMPLETED!
 2. Add auto base64 decoding of cookies, headers (and more?)
 3. Integrate openssl data points and output
 4. Create Parameter for 'host:' header value
+5. added new payloads (more to come)
 
 TO-DO
 1. Add server and header stats to VERB enumeration function
