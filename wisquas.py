@@ -164,19 +164,25 @@ except:
 
 print (Fore.GREEN + Style.BRIGHT + "\n")
 print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
-print("-   Wis Quas (v0.6) - Level 6 - REVEAL  -")
+print("-   Wis Quas (v0.7) - Level 6 - REVEAL  -")
 print("-    http://github.com/LostRabbitLabs   -")
 print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n")
 
 if agent == "-1":
     headers = {
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Accept-Encoding': 'gzip, deflate'
     }
     print "Using 'Desktop Browser' profile for crawling..."
     print "=============================================================="  + Style.RESET_ALL
 else:
     headers = {
         'User-Agent': 'Mozilla/5.0 (Linux; U; Android 2.2; en-us; Droid Build/FRG22D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Accept-Encoding': 'gzip, deflate'
     }
     print "Using 'Mobile Browser' profile for crawling..."
     print "=============================================================="  + Style.RESET_ALL
@@ -332,7 +338,7 @@ print "\n\n"
 print("Payload:   webcode / length / cookies / headers / server ")
 print("==============================================================")
 
-payloads = ['%','%%','&','<script>alert(1)</script>','%00','index.html','index.htm','index.php','index.jsp','index.asp','.git','.htaccess','server-status','xmlrpc.php','sitemap.xml','login.php','%'*10050]
+payloads = ['trace.axd','/admin/','/temp/','/tmp/','/bin/','?id=0','/api/','%','%%','&','<script>alert(1)</script>','%00','index.html','index.htm','index.php','index.jsp','index.asp','.git','.htaccess','.htpasswd','server-status','xmlrpc.php','sitemap.xml','login.php','%'*10050]
 
 
 for pl in payloads:
@@ -409,12 +415,12 @@ print"\n"
 ####################################################################################################
 print "Testing HTTP Verb Responses..."
 print "=============================================================="
-verbs = ['OPTIONS', 'GET', 'POST', 'PUT', 'HEAD', 'DELETE', 'CONNECT', 'TEST', 'TRACE']
+verbs = ['OPTIONS', 'GET', 'POST', 'PUT', 'PATCH', 'HEAD', 'DELETE', 'CONNECT', 'TEST', 'TRACK', 'TRACE']
 
 
 for verb in verbs:
     try:
-        r = requests.request(verb, url)
+        r = requests.request(verb, url, verify=False, headers=headers)
         responsecode1 = str(r.status_code)
         if responsecode1 == "200":
             textcolor = Fore.GREEN
@@ -502,7 +508,7 @@ except:
     pass
 '''
 
-print (Fore.GREEN + Style.BRIGHT + "\n====================  WisQuas (v0.6) Complete!  =====================\n\n")
+print (Fore.GREEN + Style.BRIGHT + "\n====================  WisQuas (v0.7) Complete!  =====================\n\n")
 
 sys.exit()
 
