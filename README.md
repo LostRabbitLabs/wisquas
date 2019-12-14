@@ -1,5 +1,5 @@
 # wisquas
-WisQuas (Reveal) - version: 0.7
+WisQuas (Reveal) - version: 0.8
 
 =============================================================================
 
@@ -61,6 +61,7 @@ TO-DO
 2. Add custom host header to all requests
 3. Add 'URLDecoder' for cookies/headers
 4. Add double b64-decoding
-5. Use proper and full profile headers
-6. Refactor all the holes.
+5. serialization payloads
+6. Use proper and full profile headers
+7. Refactor all the holes.
 
