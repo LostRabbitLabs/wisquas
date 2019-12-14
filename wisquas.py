@@ -164,7 +164,7 @@ except:
 
 print (Fore.GREEN + Style.BRIGHT + "\n")
 print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
-print("-   Wis Quas (v0.7) - Level 6 - REVEAL  -")
+print("-   Wis Quas (v0.8) - Level 6 - REVEAL  -")
 print("-    http://github.com/LostRabbitLabs   -")
 print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n")
 
@@ -338,7 +338,7 @@ print "\n\n"
 print("Payload:   webcode / length / cookies / headers / server ")
 print("==============================================================")
 
-payloads = ['trace.axd','/admin/','/temp/','/tmp/','/bin/','?id=0','/api/','%','%%','&','<script>alert(1)</script>','%00','index.html','index.htm','index.php','index.jsp','index.asp','.git','.htaccess','.htpasswd','server-status','xmlrpc.php','sitemap.xml','login.php','%'*10050]
+payloads = ['web.config','trace.axd','admin/','temp/','tmp/','bin/','?id=0','api/','%','%%','&','<script>alert(1)</script>','%00','index.html','index.htm','index.php','index.jsp','index.asp','index.aspx','default.asp','default.aspx','.git','.htaccess','.htpasswd','server-status','xmlrpc.php','sitemap.xml','login.php','%'*10050]
 
 
 for pl in payloads:
@@ -508,7 +508,7 @@ except:
     pass
 '''
 
-print (Fore.GREEN + Style.BRIGHT + "\n====================  WisQuas (v0.7) Complete!  =====================\n\n")
+print (Fore.GREEN + Style.BRIGHT + "\n====================  WisQuas (v0.8) Complete!  =====================\n\n")
 
 sys.exit()
 
