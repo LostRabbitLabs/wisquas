@@ -498,7 +498,7 @@ for newhost in allhosts:
         print (newhost + " : " + " MAJOR MALFUNCTION - SKIPPING ")
 
 '''
-###################### remove comments below to mirror the target site. ##########################################
+###################### remove comments below to mirror the target site. ########################################
 print("\n\nNow performing WGET and saving files locally (Loading...please be patient.... ")
 print("===============================================================================\n\n")
 try:
