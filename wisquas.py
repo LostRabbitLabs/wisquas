@@ -338,7 +338,7 @@ print "\n\n"
 print("Payload:   webcode / length / cookies / headers / server ")
 print("==============================================================")
 
-payloads = ['web.config','trace.axd','admin/','temp/','tmp/','uploads/','bin/','?id=0','api/','%','%%','&','<script>alert(1)</script>','%00','index.html','index.htm','index.php','index.jsp','index.asp','index.aspx','default.asp','default.aspx','home.asp','home.aspx','.git','.htaccess','.htpasswd','.mysql_history','.bashrc','passwd','server-status','config.php','xmlrpc.php','sitemap.xml','login.php','%'*10050]
+payloads = ['index.html','index.htm','index.shtml','index.php','index.jsp','index.asp','index.aspx','default.asp','default.aspx','home.asp','home.aspx','aspnet_files/','aspnet_client/','web.config','trace.axd','admin/','temp/','tmp/','uploads/','bin/','files/','files/','webdav/','manager/','logs/','jmx-console','INSTALL.mysql.txt','INSTALL.txt','UPGRADE.txt','wp-login.php','README','WEB-INF/','server-status','server-info','config.php','xmlrpc.php','sitemap.xml','login.php','console','status','error','phpinfo.php','access_log','php.ini','.git','.htaccess','.htpasswd','.mysql_history','.bashrc','.ssh','.history','.passwd','passwd','.hta','?id=0','api/','%','%%','&','<script>alert(1)</script>','%00','%'*10050]
 
 
 for pl in payloads:
