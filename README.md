@@ -8,6 +8,17 @@ Inspiration... http://wiki.ultimacodex.com/wiki/Reveal
      Purpose: Penetration Testing / URL Revealer
 
 
+Provide a URL to WisQuas and it will perform the following functions...
+1. Resolve hostname to IP address
+2. Perform ASN lookup on IP address to provide ownership info and possible geolocation
+3. Inventories all received headers and cookies and attempts to auto-decode their values (hex/b64)
+4. Baseline original URL request (with SSL cert info if HTTPS) to compare to all other requests
+5. Tactical fuzzing and enumeration to generate unique errors and reveal layered web services
+6. Inspect robots.txt file if available
+7. Enumerate through possible HTTP Verbs
+8. Perform Host Header Manipulation to detect additional accessible containers
+
+
 # Install
 Follow the steps below to install 'wisquas'.
 
@@ -42,5 +53,8 @@ When completed will create colorized console output!
 
      // Use WGET to mirror site and create file of all discovered URLS
      ---uncomment the code within
+     
+     // Use IP ADDRESS instead of hostname
+     ./wisquas.py -1 "https://192.168.0.1/"
 
 
